@@ -2,14 +2,16 @@ import mysql.connector
 from mysql.connector import Error
 import datetime
 import logging
-
+import os
 
 class Storage:
 
     database_connection = None
 
     def __init__(self):
-        self.create_connection('localhost', 'root', '4bot!tob4', 'discordbotstorage')
+        database_user = os.environ['DB_USER']
+        database_password = os.environ['DB_PASSWORD']
+        self.create_connection('localhost', database_user, database_password, 'jbotrpg')
 
     def create_connection(self, host_name, user_name, user_password, db_name):
         try:
