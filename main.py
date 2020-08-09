@@ -8,7 +8,7 @@ logging.basicConfig(format='%(asctime)s-%(process)d-%(levelname)s-%(message)s', 
 client = discord.Client()
 command = commandinterpreter.CommandInterpreter()
 bot_prefix = '$'
-bot_token = 'NzQxMTUwNTU3MTE2NTYzNDU2.XyzYPg.zmxMaQ6aP3kG8dpa6am7T61Lgyw'
+bot_token = 'ENTER YOUR DISCORD BOT TOKEN HERE'
 
 
 @client.event
